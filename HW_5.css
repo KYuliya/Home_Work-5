@@ -1,0 +1,67 @@
+html, body {
+    padding: 0;
+    min-height: 100%;
+    font-size: 14px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+}
+/*Width*/
+.main{
+    height: 100px;
+}
+
+.red-block{
+    background-color: rgb(255, 0, 0);
+    height: 45px;
+    
+}
+
+.three-blocks{
+    display:flex;
+    /*flex-direction: column;*/
+}
+/*Flex-grow: int;
+Отвечает за занимаемое элементом место. Если появилось
+свободное место – будет отдаваться элементам с большим flexgrow*/
+
+.green-block{
+    background-color: rgb(21, 255, 0);
+    height: 400px;  
+    flex-grow: 3; 
+   /* float: left;*/
+  /*  display: inline-block;*/
+   
+}
+
+
+.yellow-block{
+    background-color: rgb(251, 255, 0);
+    height: 400px;
+    flex-grow: 5; 
+      
+}
+
+.blue-block{
+    background-color: rgb(0, 47, 255);
+    height: 400px;
+    flex-grow: 3; 
+}
+
+.black-block{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+}
+/*Стили этого запроса будут применяться только для экранных устройств с шириной 
+области просмотра не более 1000px*/
+
+@media screen and (max-width: 1000px) {
+     .three-blocks > div {
+        flex-direction: column;
+    
+    }
+
+
+    
+}
+
